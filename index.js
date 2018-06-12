@@ -70,7 +70,13 @@ const getStockData = async (symbol) => {
         for (let i = 0; i < pageData.length; i+=2) {
             let key = pageData[i];
             let value = pageData[i + 1];
-            companyData[key] = value;
+
+            if (companyData[key] === undefined) {
+                companyData[key] = value;
+            }
+            else {
+                companyData[key + " %"] = value;
+            }
         }
 
         browser.close();
