@@ -7,6 +7,9 @@ function getTextContent(element) {
 
 const getStockData = async (symbol) => {
 
+    // Convert symbols like BRK.B to BRK-B
+    symbol = symbol.replace(/\./g, "-");
+
     const browser = await puppeteer.launch({args: ["--no-sandbox"]});
     const page = await browser.newPage();
 
