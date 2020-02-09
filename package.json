@@ -1,29 +1,33 @@
 {
-  "name": "finviz",
-  "version": "0.0.3",
-  "description": "Stock quotes and company data from Finviz",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bitquant/finviz.git"
-  },
-  "keywords": [
-    "stock",
-    "quotes",
-    "financial",
-    "data",
-    "finviz"
-  ],
-  "author": "bitquant",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bitquant/finviz/issues"
-  },
-  "homepage": "https://github.com/bitquant/finviz#readme",
-  "dependencies": {
-    "puppeteer": "1.18.1"
-  }
+    "name": "finviz",
+    "version": "0.0.3",
+    "description": "Stock quotes and company data from Finviz",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bitquant/finviz.git"
+    },
+    "keywords": [
+        "stock",
+        "quotes",
+        "financial",
+        "data",
+        "finviz"
+    ],
+    "author": "bitquant",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/bitquant/finviz/issues"
+    },
+    "homepage": "https://github.com/bitquant/finviz#readme",
+    "dependencies": {
+        "puppeteer": "1.18.1"
+    },
+    "devDependencies": {
+        "typescript": "^3.7.5"
+    }
 }
