@@ -8,8 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Run Jest
-        uses: stefanoeb/jest-action@1.0.2
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
         with:
-          jestArgs: index
+          node-version: '10.x'
+      - run: npm install
+      - run: npm run test
         
