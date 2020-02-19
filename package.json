@@ -7,6 +7,17 @@
         "build": "tsc",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
+    "jest": {
+        "transform": {
+            ".(ts|tsx)": "./node_modules/ts-jest/preprocessor.js"
+        },
+        "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+        "moduleFileExtensions": [
+            "ts",
+            "tsx",
+            "js"
+        ]
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/bitquant/finviz.git"
@@ -25,9 +36,14 @@
     },
     "homepage": "https://github.com/bitquant/finviz#readme",
     "dependencies": {
+        "@types/puppeteer": "^2.0.0",
         "puppeteer": "1.18.1"
     },
     "devDependencies": {
+        "@types/jest": "^25.1.2",
+        "@types/node": "^13.7.0",
+        "jest": "^25.1.0",
+        "ts-jest": "^25.2.0",
         "typescript": "^3.7.5"
     }
 }
